@@ -67,7 +67,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             img
-            src="../public/github-icon.png"
+            src="../public/images/github-icon.png"
             id="GitHub"
             alt="restaurant"
             href="https://github.com/1kweku?tab=repositories"
@@ -93,7 +93,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             img
-            src="public/email-icon.png"
+            src="public/images/email-icon.png"
             rel="noreferrer"
             href="mailto:kwe11_mason@yahoo.com"
             target="_blank"

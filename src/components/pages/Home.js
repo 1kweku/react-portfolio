@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import About from "./About";
+import Portfolio from "./Portfolio";
+import NavTabs from "../NavTabs";
 
 export default function Home() {
   return (
