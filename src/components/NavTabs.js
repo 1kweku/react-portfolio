@@ -1,4 +1,5 @@
 import React from "react";
+//import "/styles/NavTabs";
 
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
@@ -62,16 +63,14 @@ function NavTabs({ currentPage, handlePageChange }) {
 
       {/* CONTACT ICONS  */}
 
-      <ul class="bi bi-distribute-horizontal">
+      <ul class="contact-icons">
         <li className="nav-item">
           <a
             img
+            src="../public/github-icon.png"
             id="GitHub"
-            src="public/email-icon.png"
             alt="restaurant"
-            href="#contact"
-            //  TODO: Add a comment explaining what this logic is doing
-
+            href="https://github.com/1kweku?tab=repositories"
             onClick={() => handlePageChange("Contact")}
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -83,8 +82,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="#contact"
-            //  TODO: Add a comment explaining what this logic is doing
-
             onClick={() => handlePageChange("Contact")}
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -95,6 +92,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
+            img
+            src="public/email-icon.png"
             rel="noreferrer"
             href="mailto:kwe11_mason@yahoo.com"
             target="_blank"

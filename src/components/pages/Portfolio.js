@@ -3,22 +3,35 @@ import React from "react";
 export default function Portfolio() {
   return (
     <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <h1>Portfolio</h1>
+      <a
+        className="ecommerce"
+        href="https://github.com/1kweku/ecommerce-backend"
+        img
+        src="..../public/images/ecommerce.png"
+        alt="ecommerce-backend"
+      ></a>
+      <a
+        className="note-taker"
+        href="https://blooming-tor-94074.herokuapp.com/"
+        img
+        src="..../public/images/note-taker.png"
+        alt="note-taker"
+      ></a>
+      <a
+        className="quiz"
+        href="https://1kweku.github.io/Coding-FUNdamentals/"
+        img
+        src="..../public/images/quiz.png"
+        alt="quiz"
+      ></a>
+      <a
+        className="office-manager"
+        href="https://github.com/1kweku/dreamteam"
+        img
+        src="..../public/images/dreamteam.png"
+        alt="office-manager"
+      ></a>{" "}
     </div>
   );
 }
