@@ -1,16 +1,20 @@
-import React from 'react';
-
+import React from "react";
+const styles = {
+  header: {
+    textAlign: "center",
+  },
+};
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
+    <div id="about-me">
+      <h1 style={styles.header}>About Page</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Hello! My name is Kweku Adarkwa. I graduated from Monmouth University
+        with a bachelors in Psychology but have more recently graduated from
+        Rutgers Full Stack Coding bootcamp. Below is my fledgling portfolio
+        showcasing what I learned during the course. If you have any inquiries
+        or comments, feel free to reach out with through the contact section of
+        this page.
       </p>
     </div>
   );
