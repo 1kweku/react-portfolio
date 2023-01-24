@@ -4,7 +4,7 @@ import "../../styles/portfolio.css";
 export default function Portfolio() {
   //const handleClick = () => {};
   return (
-    <div id="portfolio">
+    <div className="portfolio" id="portfolio">
       <a
         className="ecommerce"
         href="https://github.com/1kweku/ecommerce-backend"
