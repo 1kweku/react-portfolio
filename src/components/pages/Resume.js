@@ -5,7 +5,7 @@ export default function resume() {
   return (
     <div id="resume">
       <h1>Resume</h1>
-      <h2>Back End</h2>
+      <h2>Front End</h2>
       <ul>
         <li>HTML5</li>
         <li>CSS3</li>

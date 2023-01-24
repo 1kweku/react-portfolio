@@ -10,16 +10,19 @@ export default function Portfolio() {
         href="https://github.com/1kweku/ecommerce-backend"
       >
         {" "}
-        <img src="/images/ecommerce.png" alt="ecommerce-backend" />{" "}
+        <img src="/images/ecommerce.png" alt="ecommerce-backend" />
+        {"Ecommerce"}
       </a>
       <a
         className="note-taker"
         href="https://blooming-tor-94074.herokuapp.com/"
       >
         <img src="/images/note-taker.png" alt="note-taker" />
+        {"Note taker"}
       </a>
       <a className="quiz" href="https://1kweku.github.io/Coding-FUNdamentals/">
-        <img src="/images/quiz.png" alt="quiz" />{" "}
+        <img src="/images/quiz.png" alt="quiz" />
+        {"Intro Quiz "}
       </a>
       <a
         className="office-manager"
@@ -28,6 +31,7 @@ export default function Portfolio() {
       >
         {" "}
         <img src="/images/dreamteam.png" alt="office-manager" />
+        {"Dreamteam"}
       </a>{" "}
     </div>
   );

@@ -12,22 +12,22 @@ function NavTabs() {
     <nav>
       <ul className="nav">
         <li className="nav-item">
-          <a id="about-me" href="#about-me" style={styles.nav}>
+          <a href="#about-me" style={styles.nav}>
             About me
           </a>
         </li>
         <li className="nav-item">
-          <a href="#portfolio" id="portfolio" style={styles.nav}>
+          <a href="#portfolio" style={styles.nav}>
             Portfolio
           </a>
         </li>
         <li className="nav-item">
-          <a href="#resume" id="resume" style={styles.nav}>
+          <a href="#resume" style={styles.nav}>
             Resume
           </a>
         </li>
         <li className="nav-item">
-          <a href="#contact" id="contact" style={styles.nav}>
+          <a href="#contact" style={styles.nav}>
             Contact
           </a>
         </li>
