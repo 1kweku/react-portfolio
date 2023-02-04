@@ -1,39 +1,62 @@
 import React from "react";
-import "../styles/navTabs.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const styles = {
+  icons: {
+    display: "flex",
+    alignItems: "right",
+    flexWrap: "wrap",
+    textAlign: "center",
+    float: "right",
+    paddingight: 100,
+  },
   nav: {
-    margin: 10,
+    display: "flex",
+    flexWrap: "wrap",
   },
 };
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
-
-function NavTabs() {
+export default function NavTabs(props) {
   return (
     <nav>
-      <ul className="nav">
-        <li className="nav-item">
-          <a href="#about-me" style={styles.nav}>
-            About me
+      <ul className="nav" style={styles.nav}>
+        <ol className="nav-item" onClick={props.handlePageChange}>
+          <a href="#about"> About me </a>{" "}
+        </ol>
+        <ol className="nav-item" onClick={props.handlePageChange}>
+          <a href="#contact"> Contact </a>{" "}
+        </ol>
+        <ol className="nav-item" onClick={props.handlePageChange}>
+          <a href="#resume"> Resume </a>{" "}
+        </ol>
+        <ol className="nav-item" onClick={props.handlePageChange}>
+          <a href="#portfolio"> Portfolio </a>{" "}
+        </ol>
+      </ul>
+      <ul style={styles.icons}>
+        <ol className="github">
+          <a id="GitHub" href="https://github.com/1kweku?tab=repositories">
+            {" "}
+            <FontAwesomeIcon icon={faGithub} />
           </a>
-        </li>
-        <li className="nav-item">
-          <a href="#portfolio" style={styles.nav}>
-            Portfolio
+        </ol>
+        <ol className="nav-item">
+          <a href="#contact">
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
-        </li>
-        <li className="nav-item">
-          <a href="#resume" style={styles.nav}>
-            Resume
+        </ol>
+        <ol className="email">
+          <a
+            rel="noreferrer"
+            href="mailto:adarkwakweku@gmail.com"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
-        </li>
-        <li className="nav-item">
-          <a href="#contact" style={styles.nav}>
-            Contact
-          </a>
-        </li>
+        </ol>
       </ul>
     </nav>
   );
 }
-
-export default NavTabs;

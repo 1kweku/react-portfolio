@@ -19,26 +19,33 @@ const styles = {
 };
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About");
   const handlePageChange = (page) => setCurrentPage(page);
 
+  const renderPage = () => {
+    if (currentPage === "About") {
+      return <About />;
+    }
+    if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+  };
+
   return (
-    <div style={styles.header}>
-      {/* // TODO: Add a comment describing what we are passing as props */}
-      <NavTabs currentPage={currentPage} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
-      <p id="about-me">
-        <About />
-      </p>
-      <body id="portfolio" style={styles.body}>
-        <Portfolio />
-      </body>
-      <body id="resume" style={styles.body}>
-        <Resume />
-      </body>
-      <footer id="contact">
-        <Contact />
-      </footer>
+    <div>
+      {
+        <NavTabs
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      }
+      {renderPage()}
     </div>
   );
 }

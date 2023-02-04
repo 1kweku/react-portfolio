@@ -7,7 +7,7 @@ const styles = {
 export default function About() {
   return (
     <div id="about-me">
-      <h1 style={styles.header}>About Page</h1>
+      <h2 style={styles.header}>About me</h2>
       <p>
         Hello! My name is Kweku Adarkwa. I graduated from Monmouth University
         with a bachelors in Psychology but have more recently graduated from
