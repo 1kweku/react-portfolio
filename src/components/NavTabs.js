@@ -46,8 +46,8 @@ export default function NavTabs(props) {
         >
           <a href="#portfolio"> Portfolio </a>{" "}
         </ol>
-      </ul>
-      <ul style={styles.icons}>
+        {/* </ul> */}
+        {/* <ul style={styles.icons}> */}
         <ol className="github">
           <a id="GitHub" href="https://github.com/1kweku?tab=repositories">
             {" "}
