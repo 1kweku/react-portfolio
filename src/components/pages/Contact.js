@@ -1,5 +1,9 @@
 import React from "react";
 const styles = {
+  container: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
   messageBox: {
     width: "370px",
     height: "200px",
@@ -13,7 +17,7 @@ export default function Contact() {
       action="https://formsubmit.co/733626cb6aa622dfaca1c6471c682270"
       method="POST"
     >
-      <div className="form-body">
+      <div className="form-body" style={styles.container}>
         <h2>Leave a message!</h2>
         <span> Full Name</span>
         <br />

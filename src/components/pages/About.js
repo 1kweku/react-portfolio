@@ -5,7 +5,9 @@ const styles = {
     backgroundColor: "grey",
   },
   body: {
-    backgroundColor: "blue",
+    backgroundColor: "baby blue",
+    justifyContent: "center",
+    alignItems: "center",
   },
 };
 export default function About() {

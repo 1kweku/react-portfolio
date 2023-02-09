@@ -6,11 +6,13 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const styles = {
   icons: {
     display: "flex",
-    alignItems: "right",
     flexWrap: "wrap",
-    textAlign: "center",
-    float: "right",
-    paddingight: 100,
+    justifyContent: "center",
+    position: "absolute",
+    left: 0,
+    bottom: 0,
+    right: 0,
+    alignItems: "center",
   },
 };
 
