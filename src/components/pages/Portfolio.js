@@ -33,6 +33,10 @@ export default function Portfolio() {
         <img src="/images/dreamteam.png" alt="office-manager" />
         {"Dreamteam"}
       </a>{" "}
+      <a className="movie-lovers" href="https://movie-lover.herokuapp.com/">
+        <img src="/images/movie-lovers.png" alt="movie" />
+        {"Movie Lovers "}
+      </a>
     </div>
   );
 }
